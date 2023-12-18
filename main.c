@@ -37,6 +37,7 @@ void read_char(Lexer *l);
 Token new_token(int type, char ch);
 Token next(Lexer *l);
 
+// a very basic implementation of strndup (was having issues of it not being linked??)
 char *strndup(const char *str, size_t n) {
     char *copy = malloc(n + 1);
     if (copy) {
